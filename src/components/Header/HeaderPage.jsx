@@ -1,5 +1,6 @@
 'use client';
 import { Box, HStack, Image, Text } from '@chakra-ui/react';
+import Link from 'next/link';
 import React from 'react';
 
 export default function HeaderPage() {
@@ -15,6 +16,14 @@ export default function HeaderPage() {
 				<Text w={'100px'} fontStyle={'-moz-initial'} fontFamily={'mono'} fontSize={'xl'}>
 					Genius Academy
 				</Text>
+			</HStack>
+			{/* right header */}
+			<HStack gap={16} fontSize={'md'}>
+				<Link href='/'>About Genius</Link>
+				<Link href='/'>Teachers</Link>
+				<Link href='/'>Students</Link>
+				<Link href='/'>Results</Link>
+				{/* clerk this */}
 			</HStack>
 		</Box>
 	);
