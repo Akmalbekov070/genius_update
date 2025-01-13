@@ -9,6 +9,7 @@ export default function HomePage() {
 			<Box>
 				<HeaderPage />
 			</Box>
+			hello
 		</Box>
 	);
 }
