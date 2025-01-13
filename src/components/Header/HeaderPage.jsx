@@ -1,5 +1,6 @@
 'use client';
 import { Box, HStack, Image, Text } from '@chakra-ui/react';
+import { UserButton } from '@clerk/nextjs';
 import Link from 'next/link';
 import React from 'react';
 
@@ -34,6 +35,7 @@ export default function HeaderPage() {
 					Results
 				</Link>
 				{/* clerk this */}
+				<UserButton />
 			</HStack>
 		</Box>
 	);
